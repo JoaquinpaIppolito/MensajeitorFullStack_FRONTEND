@@ -1,0 +1,301 @@
+
+.headercontenido1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    padding-left: 10px;
+}
+
+
+.left1 {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    width: 300px;
+    gap: 5px;
+}
+
+.fotoperfil1 {
+
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.fotoperfil1:hover {
+    transform: scale(1.1);
+    border:1px solid #c6c7c8
+  }
+
+.nombreyestado1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+
+.right1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 180px;
+    padding-right: 10px;
+    gap: 10px;
+
+}
+
+
+.agregar-contacto {
+    color: #54656F;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.agregar-contacto:hover {
+    transform: scale(1.2);
+    
+  }
+
+
+
+.icono-exit {
+    color: #54656F;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.icono-exit:hover {
+    transform: scale(1.2);
+    
+  }
+
+
+
+.exit {
+    color: #54656F;
+    border: none;
+    background: none;
+    padding-top: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.exit:hover,
+.exit:active,
+.exit:focus {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+
+.confirmar-logout-fondo {
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  /*  ventana */
+  .confirmar-logout-contenedor {
+    z-index: 9999;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .botones-cerrar{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+  }
+
+
+  .boton-cerrar{
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #009D79;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+      box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+      border: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .boton-cerrar:hover{
+    background-color: #009d78b7;
+  }
+
+  
+  .boton-cancelar{
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    cursor: pointer;
+      box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+      border: solid 1px;
+      border-color: rgba(0, 0, 0, 0.078);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .boton-cancelar:hover{
+    background-color: #ebebebb7;
+  }
+
+  .deseas-cerrar-sesion{
+    font-size: 16px;
+    text-align:center;
+  }
+
+  .deseas-cerrar-sesion1{
+    font-size: 12px;
+    text-align: center;
+    color: #54656F;
+  }
+
+ 
+
+
+/* Desktops */
+@media screen and (max-width: 992px) {
+    .right1 {
+        gap: 10px;
+    }
+
+
+    .exit {
+        font-size: 16px;
+    }
+
+    .menu {
+        font-size: 16px;
+    }
+
+
+    .nombreusuario1 {
+        font-size: 14px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .right1 {
+        gap: 8px;
+    }
+
+    .exit {
+        font-size: 15px;
+    }
+
+    .nombreusuario1 {
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 620px) {
+    .agregar-contacto {
+        display: none
+    }
+
+    .exit {
+        display: none
+    }
+
+    .right1 {
+        justify-content: flex-end;
+        padding-right: 15px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+    
+    .headercontenido1 {
+        width: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 7px;
+        padding-bottom: 5px;
+    }
+
+    .left1 {
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        gap:0;
+    }
+
+    
+
+    .fotoperfil1 {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nombreusuario1 {
+        font-size: 10px;
+    }
+
+    .right1 {
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items:end;
+        padding-right: 7px;
+        
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {
+
+.confirmar-logout-contenedor {
+    width: 250px;
+    
+  }
+
+}

@@ -1,0 +1,209 @@
+.headercontenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+    padding-left: 10px;
+}
+
+
+.left {
+    display: flex;
+    text-decoration: none;
+
+}
+
+.fotoperfilchatheader {
+    width: 45px;
+    height: 45px;
+    border-radius: 150px;
+    border: 1px solid #ded7d7;
+}
+
+.nombreyestado {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.nombre {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    font-style: normal;
+    padding-right: 20px;
+    color: #111B21;
+}
+
+.contactoestado {
+    display: flex;
+    font-size: 12px;
+    align-items: flex-start
+}
+
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    align-items: center;
+    width: 80px;
+    height: 16px;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+
+.eliminar-contacto{
+    color: #54656F;
+    font-size: 16px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.eliminar-contacto:hover {
+  transform: scale(1.2);
+  
+}
+
+
+.lupa {
+    color: #54656F;
+    margin-top: 1px;
+    font-size: 17px;
+}
+
+.infoscreenicon {
+    color: #54656F;
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+
+.infoscreenicon:hover {
+  transform: scale(1.2);
+  
+}
+
+
+.confirm-delete-fondo {
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .confirm-delete-contenedor {
+    z-index: 9999;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  .botones-confirmacion {
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+  }
+  
+  .boton-confirmar, .boton-cancelar {
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #009D79;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+      box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+      border: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .boton-confirmar {
+    background-color: #009D79;
+    color: white;
+  }
+  
+
+  .seguro-eliminar-contacto{
+    font-size: 16px;
+    text-align:center;
+  }
+
+  .aviso-eliminacion-contacto{
+    font-size: 12px;
+    text-align: center;
+    color: #54656F;
+  }
+
+
+@media screen and (max-width: 1200px) {
+    .nombre {
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+   
+    
+   
+
+    .fotoperfilchatheader {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contactoestado {
+        font-size: 10px;
+        padding-right: 0px;
+    }
+
+    .headercontenido {
+        width: calc(100vw - 60px);
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+
+    .confirm-delete-contenedor {
+        width: 250px;
+        
+      }
+
+      .seguro-eliminar-contacto{
+        font-size: 12px;
+        text-align:center;
+      }
+
+      .aviso-eliminacion-contacto{
+        font-size: 10px;
+        text-align: center;
+        color: #54656F;
+      }
+    
+    }

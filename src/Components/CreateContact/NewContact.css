@@ -1,0 +1,142 @@
+.nuevo-contacto-fondo {
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+
+ /*  ventana */
+  .nuevo-contacto-contenedor {
+    width: 350px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 12px rgba(0, 0, 0, 0.4);
+  }
+
+
+  .form-nuevo-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    gap: 8px;
+  }
+
+
+
+
+  .close-button {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  /* boton */
+  .button-close{
+    border: 0px;
+    background-color: #ffffff00;
+    font-size: 16px;
+    height: 5%;
+    width: 5%;
+    cursor: pointer;
+  }
+  
+.input-nombre-nuevo-contacto{
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    color: #54656F;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+
+.input-telefono-nuevo-contacto{
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    color: #54656F;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.botoncrearcontacto{
+  width: 120px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #009D79;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+    border: 0px;
+}
+
+.botoncrearcontacto:hover{
+  background-color: #009d78b7;
+}
+
+.titulo-agregar-contacto{
+  width: 200px;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+
+.error-nuevo-contacto{
+  color: red;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+  .titulo-agregar-contacto{
+      font-size: 11px;
+  }
+  .error-nuevo-contacto{
+    font-size: 9px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .nuevo-contacto-contenedor {
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-height: 500px) {
+  .nuevo-contacto-contenedor {
+    height: 50%;
+  }
+}
+
+@media screen and (max-height: 380px) {
+  .nuevo-contacto-contenedor {
+    height: 60%;
+  }
+  .botoncrearcontacto{
+    height: 25px;
+  }
+}
+

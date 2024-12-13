@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.chatcontenedor {
+    width: 61vw;
+    height: 100vh;
+
+}
+
+.header {
+    display: flex;
+    width: 61vw;
+    height: 60px;
+    align-items: center;
+    background-color: #F0F2F5;
+    position: fixed;
+    z-index: 9998;
+
+}
+
+.seleccionarcontacto{
+    font-size: 12px;
+    padding-left: 20px;
+    color: #009D79;
+}
+
+
+.chat {
+    width: 61vw;
+    height: calc(100vh - 120px);
+    background-image: url(/images/fondows.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    overflow-y: scroll;
+    margin-top: 60px;
+
+}
+
+.footer {
+    display: flex;
+    width: 61vw;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F0F2F5;
+    position: fixed;
+    bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #C1BFBA;
+}
+
+.contenedorlistadocontactos {
+    width: 39vw;
+}
+
+.headercontactos {
+    display: flex;
+    width: 39vw;
+    height: 60px;
+    align-items: center;
+    background-color: #F0F2F5;
+    position: fixed;
+}
+
+.listadocontactos {
+    width: 39vw;
+    height: 100vh;
+    background-color: white;
+    overflow-y: scroll;
+    border-bottom: 1px solid #F2F4F5;
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+
+/* Mediaquerys */
+
+
+
+@media screen and (max-width: 550px) {
+
+    .seleccionarcontacto{
+        font-size: 10px;
+        padding-left: 20px;
+        color: #009D79;
+    }
+
+    .contenedorlistadocontactos {
+        width: 60px;
+        height: 100vh;
+    }
+
+    .headercontactos {
+        width: 60px;
+    }
+
+    .listadocontactos {
+        width: 60px;
+        height: 100vh;
+        background-color: white;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-bottom: 1px solid #F2F4F5;
+        padding-top: 60px;
+    }
+
+    .chatcontenedor {
+        width: calc(100vw - 60px);
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+    }
+
+    .header {
+        width: calc(100vw - 60px);
+
+    }
+
+
+    .chat {
+        width: calc(100vw - 60px);
+
+    }
+
+    .footer {
+        width: calc(100vw - 60px);
+    }
+
+}

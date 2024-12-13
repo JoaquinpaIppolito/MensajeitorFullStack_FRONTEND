@@ -1,0 +1,130 @@
+.menu-contactos-contenedor {
+  position: relative;
+}
+
+.iconohamburguesa {
+  font-size: 20px;
+  cursor: pointer;
+  color: #A2ACB2;
+  display: none;
+  padding-left: 8px;
+
+}
+
+
+.menu {
+  position: absolute;
+  background-color: #F0F2F5;
+  padding: 15px;
+  display: none;
+  width: 30px;
+  height: 70px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-top: 0px;
+  
+}
+
+.menu.open {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  color: #54656F;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #525050;
+}
+
+
+.exit1 {
+  color: #54656F;
+  border: none;
+  background: none;
+  padding-top: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.exit1:hover,
+.exit1:active,
+.exit1:focus {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.agregarcontacto{
+  color: #54656F;
+  border: none;
+  background: none;
+  padding-top: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.agregarcontacto:hover,
+.agregarcontacto:active,
+.agregarcontacto:focus {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+
+@media screen and (max-width: 620px) {
+  .iconohamburguesa {
+    display: inline;
+    padding-right: 0px;
+  }
+
+
+}
+
+@media screen and (max-width: 550px) {
+  .iconohamburguesa {
+    font-size: 12px;
+    padding-left: 10px;
+ 
+    
+  }
+
+  .exit1{
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+
+  .menu{
+    width: 25px;
+    padding: 5px;
+    height: 60px;
+    padding-top: 0px;
+    margin-top: 5px;
+
+    
+  }
+
+  .right1{
+    padding-right: 0px;
+    padding-top: 2px;
+    justify-content: center;
+  }
+
+ 
+}
+
+

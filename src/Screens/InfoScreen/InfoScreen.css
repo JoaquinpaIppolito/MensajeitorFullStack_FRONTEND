@@ -1,0 +1,258 @@
+.infocontenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    gap: 10px;
+    color: black;
+    background-image: url(/images/fondoinfoscreen.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 100px;
+}
+
+.headerinfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    font-size: 18px;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+
+
+}
+
+.close {
+    font-size: 26px;
+    cursor: pointer;
+    border-style: hidden;
+    background-color: white;
+}
+
+.fotoperfilgrande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 15px 10px #47454732;
+
+}
+
+
+.nombreperfil {
+    font-size: 35px;
+}
+
+.telefonoperfil {
+    font-size: 18px;
+    color: #797b7c;
+    padding-bottom: 20px;
+}
+
+.fotogrande {
+    height: 150px;
+    border-radius: 150px;
+    border: 5px solid #ded7d7;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    color: #a1a3a4;
+    gap: 2px;
+    box-shadow: 0px 0px 15px 10px #47454732;
+}
+
+.infofrase {
+    font-size: 16px;
+    font-weight: bold;
+    color: black
+}
+
+.archivos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    color: #a1a3a4;
+    box-shadow: 0px 0px 15px 10px #47454732;
+}
+
+.otros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    gap: 20px;
+    padding: 25px;
+    box-shadow: 0px 0px 15px 10px #47454732;
+}
+
+.destacados {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    padding: 10px;
+    gap: 25px;
+}
+
+.destacadosleft {
+    display: flex;
+    gap: 20px;
+}
+
+.silenciar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    padding: 10px;
+    gap: 25px;
+}
+
+.silenciarleft {
+    display: flex;
+    gap: 20px;
+}
+
+.toggle {
+    font-size: 25px;
+    color: #585858;
+    cursor: pointer;
+}
+
+.temporales {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    padding: 10px;
+}
+
+.temporalesleft {
+    display: flex;
+    gap: 20px;
+}
+
+.cifrado {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    padding: 10px;
+    gap: 20px;
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+
+    .fotogrande {
+        height: 100px;
+        border-radius: 100px;
+        border: 2px solid #ded7d7;
+    }
+
+    .nombreperfil {
+        font-size: 25px;
+    }
+
+    .telefonoperfil {
+        font-size: 15px;
+    }
+
+    .infoinfo {
+        font-size: 12px;
+    }
+
+    .close {
+        font-size: 15px;
+    }
+
+    .infofrase {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .infocontenedor {
+        padding: 20px;
+        gap: 5px;
+    }
+
+    .headerinfo {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+
+    .close {
+        font-size: 12px;
+    }
+
+    .fotoperfilgrande {
+        width: 100%;
+    }
+
+    .fotogrande {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2px solid #ded7d7;
+    }
+
+    .nombreperfil {
+        font-size: 18px;
+    }
+
+    .telefonoperfil {
+        font-size: 12px;
+    }
+
+    .info,
+    .archivos,
+    .otros {
+        padding: 15px;
+    }
+
+    .infofrase,
+    .archivos {
+        font-size: 12px;
+    }
+
+    .destacados,
+    .silenciar,
+    .temporales,
+    .cifrado {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .destacadosleft,
+    .silenciarleft,
+    .temporalesleft {
+        gap: 10px;
+    }
+
+    .toggle {
+        font-size: 20px;
+    }
+}

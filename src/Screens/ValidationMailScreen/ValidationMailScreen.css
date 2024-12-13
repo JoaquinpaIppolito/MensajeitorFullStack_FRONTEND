@@ -1,0 +1,164 @@
+a {
+    color: #54656F;
+    text-decoration: none;
+  }
+  
+
+
+.fondo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/fondohome.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    z-index: 1;
+}
+
+.fondo:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.074);
+    z-index: 2;
+}
+
+
+.logocontenedor {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    min-height: 100px;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+    font-weight:bold;
+    padding-left: 1px;
+    z-index: 2;
+}
+
+.titulomjheader{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.Logomjheader{
+    font-size: 45px;
+}
+
+
+
+.laptop {
+    height: 95px;
+
+}
+
+.contador-segundos{
+    color: red
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    
+}
+
+.boton-aca{
+    color: red
+}
+  
+
+ .redirigir{
+    text-align: center;
+    color: #009D79;
+    font-size: 12px;
+ }
+
+
+/* MEDIAQUERYS */
+
+@media screen and (max-width: 992px) {
+    .titulo {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .descripcion1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeheader{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: 0px;
+        padding-bottom: 15px;
+    }
+    .titulo {
+        font-size: 14px;
+    }
+    .descripcion1 {
+        font-size: 16px;
+    }
+
+    .homecontenedor {
+        padding: 35px;
+        width: 75vw;
+    }
+   
+}
+
+
+@media screen and (max-width: 550px) {
+    .titulomjheader{
+        font-size: 15px;
+    }
+    
+    .Logomjheader{
+        font-size: 40px;
+    }
+
+    .titulo {
+        font-size: 13px;
+    }
+
+    .nuevousuario {
+        font-size: 14px;
+        width: 180px;
+    }
+
+    .homecontenedor {
+        width: 80vw;
+        height: 50vh;
+    }
+
+}
+
+@media screen and (max-height: 500px) {
+    .fondo {
+   
+        background-image: url(/images/fondohome1.jpg);
+        background-repeat: repeat-x;
+    }
+}
+
+
+
+
