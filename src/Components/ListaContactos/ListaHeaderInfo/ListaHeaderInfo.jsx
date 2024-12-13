@@ -90,7 +90,7 @@ export const ListaHeaderInfo = () => {
       const commaIndex = base64CadenaCompleta.indexOf(',')
       const base64String = base64CadenaCompleta.slice(commaIndex + 1)
 
-
+      console.log('Base64String:', base64String)
       try {
         const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/auth/upload-profile`, {
             method: 'POST',
