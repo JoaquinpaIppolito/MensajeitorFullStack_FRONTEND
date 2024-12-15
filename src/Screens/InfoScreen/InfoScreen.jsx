@@ -48,7 +48,7 @@ const InfoScreen = () => {
             </div>
             <div className='info'>
                 <span className='infotext'>Info.</span>
-                <span className='infofrase'>{contacto.name}</span>
+                <span className='infofrase'>`Hola, soy {contacto.name} estoy en whatsapp!`</span>
             </div>
             <div className='archivos'>
                 <span className='textoarchivos'>Archivos y documentos</span>
