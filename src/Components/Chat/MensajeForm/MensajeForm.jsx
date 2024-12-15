@@ -37,7 +37,7 @@ export const MensajeForm = ({ handleSubmitNuevoMensaje }) => {
       placeholder='Escribe un mensaje' 
       value={newMessage} 
       onChange={(e) => setNewMessage(e.target.value)} 
-      maxLength="45"
+      maxLength="55"
       />
       <button className='botonenviar' type='submit'><MdSend /></button>
       {showEmojiPicker && (
