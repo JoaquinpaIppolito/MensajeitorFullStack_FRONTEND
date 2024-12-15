@@ -1,14 +1,14 @@
-Trabajo final Frontend.	
+Trabajo final Full Stack.	
 
 Alumno: Joaquin P.A Ippolito
 
 
-DESAFIO ELEGIDO: Whatsapp. Desplegado mediante VERCEL.
-Librerías utilizadas en el proyecto: React, React-Router-Dom, React-Icons
+DESAFIO ELEGIDO: Whatsapp. Desplegado el frontend y el backend mediante VERCEL.
+Librerías utilizadas en el proyecto: React, React-Router-Dom, React-Icons, node.js, express.
 
-Continue el modelo que venía desarrollando basado en whatsappWeb, el cual modifique y fui agregando distintas funcionalidades. 
-Luego use LocalStorage para guardar el Mook y nombre de usuario, utilice estados en diferentes componentes y es responsivo para 2000p de máximo y 320p de minimo. 
-Tambien utilice el método ‘DESKTOP FIRST’ realizando varias Mediaquerys para poder lograr que se vea bien en todos los dispositivos ya sea achicando tamaños como modificando el modo de visualización en dispositivos más pequeños. Algunos de los Breakpoints que utilice fueron 2000px, 1200px, 992px, 768px, 480px, 320px.
+Continue el modelo que venía desarrollando basado en whatsappWeb, el cual modifique y fui agregando distintas funcionalidades tales como Logueo, Registro, recuperacion de password. 
+Es responsivo para 2000p de máximo y 280p de minimo. 
+Utilice el método ‘DESKTOP FIRST’ realizando varias Mediaquerys para poder lograr que se vea bien en todos los dispositivos ya sea achicando tamaños como modificando el modo de visualización en dispositivos más pequeños. Algunos de los Breakpoints que utilice fueron 2000px, 1200px, 992px, 768px, 480px, 320px, 280px.
 
 El proyecto consta de 3 pantallas:
 
