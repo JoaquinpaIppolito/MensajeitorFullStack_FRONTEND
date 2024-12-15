@@ -38,13 +38,13 @@ const RegisterScreen = () => {
 
     if (password.length < 8) {
       setColorRespuesta('#ff0000')
-      setMessageres('La contrasena debe tener al menos 8 caracteres!')
+      setMessageres('El password debe tener entre 8 y 20 caracteres!')
       return
     }
 
     if (nombre.length < 5) {
       setColorRespuesta('#ff0000')
-      setMessageres('El nombre de usuario tiene que tener 4 caracteres minimo')
+      setMessageres('El nombre de usuario tiene que tener 4 caracteres minimo!')
       return
     }
 
@@ -118,9 +118,9 @@ return (
         <form onSubmit={handleSubmit} className='forminiciar4'>
           <span className='descripcion1'>Introduce tus datos:</span>
           <input className='nombre-usuario' name='nombre-usuario' type='text' placeholder='Nombre' maxLength="8" />
-          <input className='email-usuario' name='email-usuario' type='text' placeholder='tuemail@email.com' />
+          <input className='email-usuario' name='email-usuario' type='text' placeholder='tuemail@email.com' maxLength="60" />
           <div className='password-container'>
-            <input className='password-usuario' name='password-usuario' type={passwordType} placeholder='Password' />
+            <input className='password-usuario' name='password-usuario' type={passwordType} placeholder='Password' maxLength="20" />
             {passwordType === 'password' 
               ? <IoEyeOutline className='eye-icon' onClick={togglePasswordVisibility} />
               : <IoEyeOffOutline className='eye-icon' onClick={togglePasswordVisibility} />

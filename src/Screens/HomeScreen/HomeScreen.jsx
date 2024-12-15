@@ -93,9 +93,9 @@ const HomeScreen = () => {
         <div className='home'>
           <form onSubmit={handleSubmit} className='forminiciar'>
             <span className='descripcion1'>Iniciar Sesion:</span>
-            <input className='user' name='user' type='text' placeholder='email' />
+            <input className='user' name='user' type='text' placeholder='email' maxLength="60" />
             <div className='password-container'>
-              <input className='password' name='password' type={passwordType} placeholder='password' />
+              <input className='password' name='password' type={passwordType} placeholder='password' maxLength="20" />
               {passwordType === 'password' 
                 ? <IoEyeOutline className='eye-icon' onClick={togglePasswordVisibility} />
                 : <IoEyeOffOutline className='eye-icon' onClick={togglePasswordVisibility} />

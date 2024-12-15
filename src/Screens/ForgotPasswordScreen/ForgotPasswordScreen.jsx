@@ -66,7 +66,7 @@ const ForgotPasswordScreen = () => {
         <div className='home'>
           <form onSubmit={handleSubmit} className='forminiciar'>
             <span className='descripcion1'>Introduzca su email:</span>
-            <input className='email' name='email' type='text' placeholder='email' />
+            <input className='email' name='email' type='text' placeholder='email' maxLength="55" />
             <span className='mensaje-forgot' style={{ color: colorRespuesta }}>{message}</span>
             <button className='enviarmail' type='submit'>Enviar</button>
             <Link to='/'><span className='iniciarsesionaca'>

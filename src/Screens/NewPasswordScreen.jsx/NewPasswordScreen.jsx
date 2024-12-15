@@ -99,7 +99,7 @@ const NewPasswordScreen = () => {
             <form onSubmit={handleSubmit} className='forminiciar'>
               <span className='contrasenanueva1'>Ingrese la nueva contraseña:</span>
               <div className='password-container'>
-                <input className='password' name='password' type={passwordType} placeholder='Nueva Contraseña' />
+                <input className='password' name='password' type={passwordType} placeholder='Nueva Contraseña' maxLength="20"/>
                 {passwordType === 'password' 
                   ? <IoEyeOutline className='eye-icon' onClick={togglePasswordVisibility} />
                   : <IoEyeOffOutline className='eye-icon' onClick={togglePasswordVisibility} />
@@ -107,7 +107,7 @@ const NewPasswordScreen = () => {
               </div>
               <span className='contrasenanueva2'>Repite la nueva contraseña:</span>
               <div className='password-container'>
-                <input className='password' name='password1' type={passwordType} placeholder='Nueva Contraseña' />
+                <input className='password' name='password1' type={passwordType} placeholder='Nueva Contraseña' maxLength="20" />
                 {passwordType === 'password' 
                   ? <IoEyeOutline className='eye-icon' onClick={togglePasswordVisibility} />
                   : <IoEyeOffOutline className='eye-icon' onClick={togglePasswordVisibility} />
