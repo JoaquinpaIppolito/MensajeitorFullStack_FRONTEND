@@ -42,7 +42,7 @@ const InfoScreen = () => {
                     </button>
                     <span className='infoinfo'>Info de contacto:</span>
                 </div>
-                <img className='fotogrande' src={contacto.thmubnail || "/images/fotoperfil.png"} alt={`imagen ${contacto.name}`} />
+                <img className='fotogrande' src={contacto.thumbnail || "/images/fotoperfil.png"} alt={`imagen ${contacto.name}`} />
                 <h1 className='nombreperfil'>{contacto.name}</h1>
                 <span className='telefonoperfil'><FaPhoneAlt /> {contacto.telefono}</span>
             </div>
