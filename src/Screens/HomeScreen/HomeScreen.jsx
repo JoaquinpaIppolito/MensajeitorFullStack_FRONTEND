@@ -7,7 +7,6 @@ import { AuthContext } from '../../Context/AuthContext'
 import { CrearContactoDefault } from '../../Fetching/contactsFetch'
 
 
-//Pantalla de Logueo
 // Pantalla de Logueo
 const HomeScreen = () => {
   const navigate = useNavigate()
@@ -22,6 +21,7 @@ const HomeScreen = () => {
     const userId = localStorage.getItem('user_Id')
     const accessToken = localStorage.getItem('access_token')
 
+    //Si hay usuario logueado redirecciono a la chatscreen.
     if (userName && userId && accessToken) {
       navigate(`/chat/${userId}`)
     }

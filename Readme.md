@@ -49,6 +49,11 @@ Chat >
 	MensajeForm.jsx: A través de este componente ubicado en el footer se pueden enviar nuevos mensajes o nuevo emojis.
 
 
+CreateContact>
+
+	Componente encargado de crear un nuevo contacto.
+
+
 ListaContactos>
 
 	Contactos.jsx: Es el globo de cada contacto incluyendo su foto de perfil, Nombre, último  mensaje, fecha del último mensaje)
@@ -57,7 +62,19 @@ ListaContactos>
 
 	ListaHeaderInfo: Es el header de la lista de contactos que incluye su foto de perfil, nombre, icono de   agregar nuevo contacto, de cerrar sesión. En caso de resoluciones de pantalla mas pequeñas utiliza un menú Hamburguesa.
 
+ProtectedRoute:
+
+	Componente encargado de la proteccion de rutas tales como la de la screen chat y la de contact info screen.
+
+
+fetching>
+
+	Dentro de esta carpeta hay 2 archivos .js encargados de los fetch relacionados a contactos y a mensajes.
+
+
 MenuContactos>
 		
-	MenuContactos.jsx: Es el encargado del menú hamburguesa que se renderiza en resoluciones de 	dispositivos pequeños. 
+	MenuContactos.jsx: Es el encargado del menú hamburguesa que se renderiza en resoluciones de dispositivos pequeños.
+
+
 
