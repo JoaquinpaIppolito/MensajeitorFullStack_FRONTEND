@@ -1,6 +1,6 @@
-Trabajo final Full Stack.	
+*Trabajo final Full Stack*	
 
-Alumno: Joaquin P.A Ippolito
+*Alumno: Joaquin P.A Ippolito*
 
 
 DESAFIO ELEGIDO: Clon de Whatsapp Web. Desplegado mediante VERCEL!.
@@ -32,13 +32,13 @@ FORGOT PASSWORD: Pantalla para la recuperación de password. Utiliza validación
 
 
 
-Mapa del Proyecto:
+Mapa del Proyecto>
 
-SCREENS: HomeScreen.jsx (ruta principal, la del logueo), ChatScreen.jsx (Pantalla de chat), InfoScreen.jsx (Info de contacto), ForgotPasswordScreen.jsx (Recuperacion de password), validationMailScreen.jsx (Redirije a home luego de validad mail), NewPasswordScreen.jsx (Pantalla para modificar el password)
+	SCREENS: HomeScreen.jsx (ruta principal, la del logueo), ChatScreen.jsx (Pantalla de chat), InfoScreen.jsx (Info de contacto), ForgotPasswordScreen.jsx (Recuperacion de password), validationMailScreen.jsx (Redirije a home luego de validad mail), NewPasswordScreen.jsx (Pantalla para modificar el password)
 
 COMPONENTES: 
 
-Chat >
+Chat>
 
 	ChatHeaderInfo.jsx: El header de la seccion de chat con su foto de perfil, Link hacia la infoscreen (presionando en la sección izquierda o en el Icono de Info), icono de eliminar contacto e icono de InfoScreen. 
 
