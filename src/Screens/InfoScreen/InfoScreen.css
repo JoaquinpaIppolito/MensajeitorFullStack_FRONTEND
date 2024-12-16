@@ -13,6 +13,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 100px;
+    padding-top: 10px;
 }
 
 .headerinfo {
@@ -164,6 +165,11 @@
 
 @media screen and (max-width: 550px) {
 
+    .infocontenedor {
+        padding: 15px;
+        gap: 5px;
+    }
+
     .fotogrande {
         height: 100px;
         border-radius: 100px;
@@ -258,13 +264,67 @@
 }
 
 
-
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 320px) {
     .infocontenedor {
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-bottom: 100px;
-        padding-top: 20px;
-        
+        gap: 5px;
+    }
+
+    .headerinfo {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+
+    .close {
+        font-size: 12px;
+    }
+
+    .fotoperfilgrande {
+        width: 100%;
+    }
+
+    .fotogrande {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2px solid #ded7d7;
+    }
+
+    .nombreperfil {
+        font-size: 18px;
+    }
+
+    .telefonoperfil {
+        font-size: 12px;
+    }
+
+    .info,
+    .archivos,
+    .otros {
+        padding: 15px;
+        font-size: 11px;
+    }
+
+    .infofrase,
+    .archivos {
+        font-size: 11px;
+    }
+
+    .destacados,
+    .silenciar,
+    .temporales,
+    .cifrado {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .destacadosleft,
+    .silenciarleft,
+    .temporalesleft {
+        gap: 10px;
+    }
+
+    .toggle {
+        font-size: 20px;
     }
 }
+
